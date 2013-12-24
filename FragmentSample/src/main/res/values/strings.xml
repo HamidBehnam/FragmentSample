@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FragmentSample</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_fragment_button_text">Show Dialog</string>
+    <string name="main_fragment_button2_text">Open Another Activity</string>
+    <string name="main_fragment_text_view_text">Enter Some Text Here:</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="second_fragment_text_view_text">You Entered:</string>
+    <string name="second_fragment_button_text">OK</string>
+
+</resources>
