@@ -4,9 +4,10 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="distributionType" value="DEFAULT_WRAPPED" />
-        <option name="externalProjectPath" value="D:\Users\Hamid\AndroidStudioProjects\FragmentSample" />
+        <option name="externalProjectPath" value="E:\Users\Hamid\AndroidStudioProjects\FragmentSample" />
       </GradleProjectSettings>
     </option>
+    <option name="serviceDirectoryPath" value="$USER_HOME$/.gradle" />
   </component>
 </project>
 

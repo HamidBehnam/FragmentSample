@@ -18,6 +18,9 @@ import android.widget.TextView;
  */
 public class AlertDialogFragment extends DialogFragment {
 
+    public static final String KEY_FOR_TITLE = "keyForTitle";
+    public static final String KEY_FOR_MESSAGE = "keyForMessage";
+
     private String title = "Default Title";
     private String message = "Default Message";
 
@@ -31,7 +34,21 @@ public class AlertDialogFragment extends DialogFragment {
     }
 
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putString(AlertDialogFragment.KEY_FOR_TITLE, this.title);
+        outState.putString(AlertDialogFragment.KEY_FOR_MESSAGE, this.message);
+
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        if(savedInstanceState != null)
+        {
+            this.title = savedInstanceState.getString(AlertDialogFragment.KEY_FOR_TITLE);
+            this.message = savedInstanceState.getString(AlertDialogFragment.KEY_FOR_MESSAGE);
+        }
+
         AlertDialog.Builder theBuilder = new AlertDialog.Builder(getActivity());
         theBuilder.setTitle(this.title).setMessage(this.message);
 
